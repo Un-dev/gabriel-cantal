@@ -7,17 +7,16 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
+    netlifyIdentity.on("init", user => {
+      if (!user) {
+        netlifyIdentity.open();
+      }
+    });
+    netlifyIdentity.on("login", user => {
+      document.location.href = "/admin/#login_" + user.token.access_token;
+    });
   </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
