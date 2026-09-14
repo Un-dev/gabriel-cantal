@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: VOTRE_USERNAME/gabriel-cantal
+  repo: Un-dev/gabriel-cantal
   branch: main
   base_url: https://decap-oauth.netlify.app
 
