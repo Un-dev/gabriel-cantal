@@ -24,6 +24,13 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    flex: 1;
 }
 
 a {
@@ -343,6 +350,7 @@ a:hover {
     padding: 3rem 5%;
     text-align: center;
     border-top: 1px solid var(--border);
+    margin-top: auto;
 }
 
 .social-links {
