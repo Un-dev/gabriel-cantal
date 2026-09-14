@@ -7,14 +7,10 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+  <div id="admin"></div>
   <script>
-    netlifyIdentity.on("init", user => {
-      if (!user) {
-        netlifyIdentity.open();
-      }
-    });
-    netlifyIdentity.on("login", user => {
-      document.location.href = "/admin/#login_" + user.token.access_token;
+    netlifyIdentity.init({
+      container: "#admin"
     });
   </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
