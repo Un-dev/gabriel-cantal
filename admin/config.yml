@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: Un-dev/gabriel-cantal
+  name: git-gateway
   branch: main
-  base_url: https://decap-oauth.netlify.app
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
