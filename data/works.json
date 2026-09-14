@@ -1,0 +1,29 @@
+{
+    "clips": [
+        {
+            "title": "Clip Musical - Exemple",
+            "description": "Réalisation et montage d'un clip musical artistique",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            "tag": "Clip Musical",
+            "year": "2024"
+        }
+    ],
+    "moyensMetrages": [
+        {
+            "title": "Moyen Métrage - Exemple",
+            "description": "Montage d'un moyen métrage dramatique",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            "tag": "Moyen Métrage",
+            "year": "2024"
+        }
+    ],
+    "publicites": [
+        {
+            "title": "Publicité - Exemple",
+            "description": "Montage publicitaire pour une marque",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            "tag": "Publicité",
+            "year": "2024"
+        }
+    ]
+}

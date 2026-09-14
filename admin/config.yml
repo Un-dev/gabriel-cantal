@@ -1,0 +1,69 @@
+backend:
+  name: github
+  repo: VOTRE_USERNAME/gabriel-cantal
+  branch: main
+  base_url: https://decap-oauth.netlify.app
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "works"
+    label: "Œuvres"
+    files:
+      - name: "clips"
+        label: "Clips Musicaux"
+        file: "data/works.json"
+        fields:
+          - name: clips
+            label: "Clips"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Année", name: "year", widget: "string" }
+              - { label: "Tag", name: "tag", widget: "string", default: "Clip Musical" }
+              - { label: "URL YouTube/Vimeo (embed)", name: "videoUrl", widget: "string", hint: "URL embed : https://www.youtube.com/embed/..." }
+
+      - name: "moyens-metrages"
+        label: "Moyens Métrages"
+        file: "data/works.json"
+        fields:
+          - name: moyensMetrages
+            label: "Moyens Métrages"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Année", name: "year", widget: "string" }
+              - { label: "Tag", name: "tag", widget: "string", default: "Moyen Métrage" }
+              - { label: "URL YouTube/Vimeo (embed)", name: "videoUrl", widget: "string", hint: "URL embed : https://www.youtube.com/embed/..." }
+
+      - name: "publicites"
+        label: "Publicités"
+        file: "data/works.json"
+        fields:
+          - name: publicites
+            label: "Publicités"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Année", name: "year", widget: "string" }
+              - { label: "Tag", name: "tag", widget: "string", default: "Publicité" }
+              - { label: "URL YouTube/Vimeo (embed)", name: "videoUrl", widget: "string", hint: "URL embed : https://www.youtube.com/embed/..." }
+
+  - name: "settings"
+    label: "Paramètres du site"
+    files:
+      - name: "general"
+        label: "Informations générales"
+        file: "data/settings.json"
+        fields:
+          - { label: "Nom", name: "name", widget: "string" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "Vimeo", name: "vimeo", widget: "string", required: false }
+          - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
